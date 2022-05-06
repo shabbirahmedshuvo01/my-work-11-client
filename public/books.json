@@ -2,42 +2,42 @@
     {
         "id": 1,
         "name": "ENGINE DIAGNOSTIC",
-        "price": "300",
+        "quantity": "300",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
         "img": "https://ultranextgen.com/wp-content/uploads/2020/12/20201230_090729-01.jpg"
     },
     {
         "id": 2,
         "name": "Programming er Bolod to Boss",
-        "price": "100",
+        "quantity": "100",
         "description": "By showing the easiest and shortest road, by teaching the minimum things that need to be learned, by making a beginner level programmer",
         "img": "https://www.jhankarmahbub.com/images/bolod.png"
     },
     {
         "id": 3,
         "name": "Habluder Jonno Programming",
-        "price": "150",
+        "quantity": "150",
         "description": "Those who can't start the programming flame because of fear. Programming is difficult; A student of science or math hides his face thinking that.",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-NIZaCYlabc2lyHJKztKok7eTWF-eoQzN_iHgXyMAVOLuim49oWBTvqFP_yPbJJJofMQ&usqp=CAU"
     },
     {
         "id": 4,
         "name": "Recharge Your Down Battery",
-        "price": "180",
+        "quantity": "180",
         "description": "The purpose of this book is to give you a charger for life, for dreams, for achievement. So that you can recharge yourself with your down battery book whenever you need.",
         "img": "https://editorgo.com/wp-content/uploads/2020/12/jhankar-mahbub-books-pdf.jpg"
     },
     {
         "id": 5,
         "name": "Hate Kolome Javascript",
-        "price": "100",
+        "quantity": "100",
         "description": "Although primarily known as a scripting language JavaScript is now being used in a variety of ways.an opportunity to solve the problem using JavaScript",
         "img": "https://www.sakshidhoni.com/wp-content/uploads/2021/09/%E0%A6%B9%E0%A6%BE%E0%A6%A4%E0%A7%87-%E0%A6%95%E0%A6%B2%E0%A6%AE%E0%A7%87-%E0%A6%9C%E0%A6%BE%E0%A6%AD%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%AA%E0%A7%8D%E0%A6%9F.png"
     },
     {
         "id": 6,
         "name": "Shuvra",
-        "price": "300",
+        "quantity": "300",
         "description": "This book was written by Humayun Ahmed.This boob written for a alon boy.The boy have to know what next.This book have suspicious character",
         "img": "http://unb.com.bd/filemanager/photos/64/shuvra.jpg"
     }
