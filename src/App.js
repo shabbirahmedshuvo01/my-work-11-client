@@ -1,10 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Products from './components/Products/Products';
 
 function App() {
   return (
     <div className="App">
-      <h2 className='bg-primary'>I am here</h2>
+      <Header></Header>
+      <Routes>
+        <Route path='/' element={<Products></Products>}></Route>
+      </Routes>
     </div>
   );
 }
