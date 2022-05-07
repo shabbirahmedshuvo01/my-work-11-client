@@ -1,8 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import Social from '../Social/Social';
+import auth from '../../firebase.init';
 
 const Register = () => {
+
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth);
 
 
     const handleRegister = event => {
@@ -10,6 +19,8 @@ const Register = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
+
+        createUserWithEmailAndPassword(email, password);
     }
 
 
