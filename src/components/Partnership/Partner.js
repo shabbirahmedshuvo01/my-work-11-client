@@ -3,8 +3,8 @@ import React from 'react';
 const Partner = ({ partner }) => {
     const { name, days, description, image } = partner;
     return (
-        <div>
-            <div className='g-5 col-sm-12 col-md-6 col-lg-4'>
+        <div className='g-5 col-sm-12 col-md-6 col-lg-4'>
+            <div>
                 <div class="card" style={{ width: "18rem" }}>
                     <img class="card-img-top" src={image} alt="" />
                     <div class="card-body">

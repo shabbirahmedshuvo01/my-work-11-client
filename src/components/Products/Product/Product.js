@@ -24,9 +24,6 @@ const Product = () => {
             <div>
                 <Section></Section>
             </div>
-            <div>
-                <Partnership></Partnership>
-            </div>
         </div>
     );
 };
