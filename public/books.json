@@ -1,15 +1,17 @@
 [
     {
         "id": 1,
-        "name": "ENGINE DIAGNOSTIC",
+        "name": "Paramoy Life er Paracetamol",
+        "supply": "Book House",
         "price": "270",
         "quantity": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Programming is difficult; A student of science or math hides his face thinking that.A student of science or math hides his face thinking that.",
         "img": "https://ultranextgen.com/wp-content/uploads/2020/12/20201230_090729-01.jpg"
     },
     {
         "id": 2,
         "name": "Programming er Bolod to Boss",
+        "supply": "Book House",
         "price": "170",
         "quantity": "100",
         "description": "By showing the easiest and shortest road, by teaching the minimum things that need to be learned, by making a beginner level programmer",
@@ -18,6 +20,7 @@
     {
         "id": 3,
         "name": "Habluder Jonno Programming",
+        "supply": "Book Deallers",
         "price": "250",
         "quantity": "150",
         "description": "Those who can't start the programming flame because of fear. Programming is difficult; A student of science or math hides his face thinking that.",
@@ -26,6 +29,7 @@
     {
         "id": 4,
         "name": "Recharge Your Down Battery",
+        "supply": "Book Deallers",
         "price": "300",
         "quantity": "180",
         "description": "The purpose of this book is to give you a charger for life, for dreams, for achievement. So that you can recharge yourself with your down battery book whenever you need.",
@@ -34,6 +38,7 @@
     {
         "id": 5,
         "name": "Hate Kolome Javascript",
+        "supply": "Book Readers",
         "price": "160",
         "quantity": "100",
         "description": "Although primarily known as a scripting language JavaScript is now being used in a variety of ways.an opportunity to solve the problem using JavaScript",
@@ -42,6 +47,7 @@
     {
         "id": 6,
         "name": "Shuvra",
+        "supply": "Book Readers",
         "price": "150",
         "quantity": "300",
         "description": "This book was written by Humayun Ahmed.This boob written for a alon boy.The boy have to know what next.This book have suspicious character",

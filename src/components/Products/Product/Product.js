@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Partnership from '../../Partnership/Partnership';
 import Section from '../../Section/Section';
 import Products from '../Products';
 

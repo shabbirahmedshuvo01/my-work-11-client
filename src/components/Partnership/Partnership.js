@@ -8,8 +8,8 @@ import Partner from './Partner';
 const Partnership = () => {
     const partners = [
         { id: 1, name: "Book House", days: '3 years', description: 'we are here for best deals.they mostly friends and help us to dealing', image: friend1 },
-        { id: 2, name: "Book Dellers", days: '1 years', description: 'we are here for best deals.they mostly friends and help us to dealing', image: friend2 },
-        { id: 3, name: "Book Shop", days: '2 years', description: 'we are here for best deals.they mostly friends and help us to dealing', image: friend3 },
+        { id: 2, name: "Book Deallers", days: '1 years', description: 'we are here for best deals.they mostly friends and help us to dealing', image: friend2 },
+        { id: 3, name: "Book Readers", days: '2 years', description: 'we are here for best deals.they mostly friends and help us to dealing', image: friend3 },
     ]
     return (
         <div>
