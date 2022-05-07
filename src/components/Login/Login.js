@@ -1,10 +1,11 @@
-import { async } from '@firebase/util';
 import React, { useRef } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
 import Social from '../Social/Social';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
@@ -25,6 +26,11 @@ const Login = () => {
 
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
+
+    if (loading || sending) {
+        return <Loading></Loading>
+    }
 
 
     if (user) {
@@ -49,8 +55,13 @@ const Login = () => {
 
     const resetPassword = async () => {
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-        alert('mail sent')
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('mail sent')
+        }
+        else {
+            toast('please enter your valid email');
+        }
     }
 
     return (
@@ -72,6 +83,7 @@ const Login = () => {
                 >reset password</button></p>
             </div>
             <Social></Social>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

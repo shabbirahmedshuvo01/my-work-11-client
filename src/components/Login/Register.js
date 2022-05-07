@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import Social from '../Social/Social';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
 
 const Register = () => {
 
@@ -19,6 +20,10 @@ const Register = () => {
         navigate('/home');
     }
 
+
+    if (loading) {
+        return <Loading></Loading>
+    }
 
     const handleRegister = event => {
         event.preventDefault();
