@@ -8,6 +8,8 @@ import Error from './components/Error/Error';
 import Login from './components/Login/Login';
 import Register from './components/Login/Register';
 import BookDetail from './components/BookDetail/BookDetail';
+import CheckOut from './components/CheckOut/CheckOut';
+import RequireAuth from './components/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -15,10 +17,16 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Banner></Banner>}></Route>
+        <Route path='/home' element={<Banner></Banner>}></Route>
         <Route path='/product' element={<Product></Product>}></Route>
         <Route path='/books/:bookId' element={<BookDetail></BookDetail>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/checkout' element={
+          <RequireAuth>
+            <CheckOut></CheckOut>
+          </RequireAuth>
+        }></Route>
         <Route path='*' element={<Error></Error>}></Route>
       </Routes>
       <Footer></Footer>

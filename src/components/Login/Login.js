@@ -1,17 +1,56 @@
+import { async } from '@firebase/util';
 import React, { useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 import Social from '../Social/Social';
 
 const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
+    const navigate = useNavigate();
+    const location = useLocation();
+
+
+    let from = location.state?.from?.pathname || "/";
+
+    let errorWork;
+
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+
+
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
+
+    if (user) {
+        navigate(from, { replace: true });
+    }
+
+    if (error) {
+
+        errorWork = <div>
+            <p className='text-danger'>Error: {error.message}</p>
+        </div>
+    }
+
 
     const handleSubmit = event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
 
-        console.log(email, password)
+        signInWithEmailAndPassword(email, password);
+    }
+
+    const resetPassword = async () => {
+        const email = emailRef.current.value;
+        await sendPasswordResetEmail(email);
+        alert('mail sent')
     }
 
     return (
@@ -26,8 +65,11 @@ const Login = () => {
                     <input
                         className='mx-auto btn btn-primary mt-2' type="submit" value="Log In" />
                 </form>
+                {errorWork}
                 <p>New here? <Link to={'/register'} className='text-primary pe-auto text-decoration-none'>Please register</Link></p>
-                <p>forget password? <button className='text-primary pe-auto text-decoration-none btn btn-link'>reset password</button></p>
+                <p>forget password? <button className='text-primary pe-auto text-decoration-none btn btn-link'
+                    onClick={resetPassword}
+                >reset password</button></p>
             </div>
             <Social></Social>
         </div>
