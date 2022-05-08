@@ -1,11 +1,12 @@
 import React from 'react';
 import hablu from '../../images/show.jpg'
 import Product from '../Products/Product/Product';
+import './Banner.css'
 
 const Banner = () => {
     return (
         <div>
-            <div className='d-flex align-items-center p-5 mt-5 bg-success text-dark bg-opacity-25 justify-content-evenly'>
+            <div className='d-flex align-items-center p-5 mt-5 bg-success text-dark bg-opacity-25 justify-content-evenly responsive'>
                 <div>
                     <img src={hablu} alt="" />
                 </div>

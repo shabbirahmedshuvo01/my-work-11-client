@@ -1,0 +1,14 @@
+@media only screen and (max-width:576px) {
+    .responsive {
+        flex-direction: column;
+        margin: 40px;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .responsive {
+        flex-direction: column;
+        width: 100%;
+    }
+}
