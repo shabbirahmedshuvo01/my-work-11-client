@@ -20,7 +20,7 @@ const Header = () => {
                 <div>
                     <Link to="/">Home</Link>
                     <Link to="/product">Product</Link>
-                    <Link to="/about">My items</Link>
+                    <Link to="/blogs">Blogs</Link>
                     {
                         user && <>
                             <Link to="/manageitem">Manage Items</Link>

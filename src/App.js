@@ -12,6 +12,7 @@ import CheckOut from './components/CheckOut/CheckOut';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import AddBook from './components/AddBook/AddBook';
 import ManageItems from './components/ManageItems/ManageItems';
+import Blogs from './components/Blogs/Blogs';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/' element={<Banner></Banner>}></Route>
         <Route path='/home' element={<Banner></Banner>}></Route>
         <Route path='/product' element={<Product></Product>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/books/:bookId' element={<BookDetail></BookDetail>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
