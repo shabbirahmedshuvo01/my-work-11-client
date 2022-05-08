@@ -2,10 +2,11 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Products = (props) => {
-    const { id, name, quantity, description, img, price, supply } = props.book;
+    const { _id, name, quantity, description, img, price, supply } = props.book;
     const navigate = useNavigate();
     const navigateToBooksDetail = id => {
         navigate(`books/${id}`);
+
     }
     return (
         <div className='g-5 col-sm-12 col-md-6 col-lg-4'>
@@ -18,7 +19,7 @@ const Products = (props) => {
                     <h6 className="card-title">Supplier: {supply}</h6>
                     <p className="card-text">{description}</p>
                     <p><small className='text-success'>In Stock</small></p>
-                    <button onClick={() => navigateToBooksDetail(id)} className="btn btn-primary">Book Now</button>
+                    <button onClick={() => navigateToBooksDetail(_id)} className="btn btn-primary">Update</button>
                 </div>
             </div>
         </div>

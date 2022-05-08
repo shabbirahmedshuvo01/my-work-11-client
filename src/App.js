@@ -10,6 +10,7 @@ import Register from './components/Login/Register';
 import BookDetail from './components/BookDetail/BookDetail';
 import CheckOut from './components/CheckOut/CheckOut';
 import RequireAuth from './components/RequireAuth/RequireAuth';
+import AddBook from './components/AddBook/AddBook';
 
 function App() {
   return (
@@ -25,6 +26,11 @@ function App() {
         <Route path='/checkout' element={
           <RequireAuth>
             <CheckOut></CheckOut>
+          </RequireAuth>
+        }></Route>
+        <Route path='/addbook' element={
+          <RequireAuth>
+            <AddBook></AddBook>
           </RequireAuth>
         }></Route>
         <Route path='*' element={<Error></Error>}></Route>
