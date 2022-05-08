@@ -20,9 +20,13 @@ const Header = () => {
                 <div>
                     <Link to="/">Home</Link>
                     <Link to="/product">Product</Link>
-                    <Link to="/">Manage Items</Link>
-                    <Link to="/addbook">Add Item</Link>
                     <Link to="/about">My items</Link>
+                    {
+                        user && <>
+                            <Link to="/manageitem">Manage Items</Link>
+                            <Link to="/addbook">Add Item</Link>
+                        </>
+                    }
                     {
                         user ?
                             <button className='btn btn-link text-white text-decoration-none' onClick={handleSingOut}>Log Out</button>

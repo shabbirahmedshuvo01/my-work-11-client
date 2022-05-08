@@ -11,6 +11,7 @@ import BookDetail from './components/BookDetail/BookDetail';
 import CheckOut from './components/CheckOut/CheckOut';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import AddBook from './components/AddBook/AddBook';
+import ManageItems from './components/ManageItems/ManageItems';
 
 function App() {
   return (
@@ -31,6 +32,11 @@ function App() {
         <Route path='/addbook' element={
           <RequireAuth>
             <AddBook></AddBook>
+          </RequireAuth>
+        }></Route>
+        <Route path='/manageitem' element={
+          <RequireAuth>
+            <ManageItems></ManageItems>
           </RequireAuth>
         }></Route>
         <Route path='*' element={<Error></Error>}></Route>
