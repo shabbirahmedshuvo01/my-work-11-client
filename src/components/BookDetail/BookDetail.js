@@ -6,7 +6,7 @@ const BookDetail = () => {
     const [perBook, setPerBook] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/book/${bookId}`
+        const url = `https://ancient-beach-97933.herokuapp.com/book/${bookId}`
 
         fetch(url)
             .then(res => res.json())

@@ -7,7 +7,7 @@ const AddBook = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/book`;
+        const url = `https://ancient-beach-97933.herokuapp.com/book`;
         fetch(url, {
             method: 'POST',
             headers: {
