@@ -13,7 +13,7 @@ const Products = (props) => {
             <div className="card" style={{ width: '18rem' }}>
                 <img className="card-img-top" src={img} alt="" />
                 <div className="card-body">
-                    <h5 className="card-title">Name: {name}</h5>
+                    <h5 className="card-title">{name}</h5>
                     <h5 className="card-text">Quantity: {quantity}</h5>
                     <h6 className="card-title">Per Book: {price}</h6>
                     <h6 className="card-title">Supplier: {supply}</h6>
