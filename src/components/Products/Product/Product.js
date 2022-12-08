@@ -17,7 +17,7 @@ const Product = () => {
                 <div className="row bg-success text-dark bg-opacity-25">
                     <h1 className='text-primary text-center mt-5'>Our Books Are</h1>
                     {
-                       !books ? <Loading/> : books.map(book => <Products key={book._id} book={book}></Products>)
+                       books.length === 0 ? <Loading/> : books.map(book => <Products key={book._id} book={book}></Products>)
                     }
                 </div>
             </div>
